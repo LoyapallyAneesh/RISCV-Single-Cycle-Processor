@@ -7,10 +7,13 @@ The processor implements a single cycle Datapath, meaning that each instruction 
 Although the processor uses a clock, the majority of the Datapath is combinational. The clock is primarily used to update sequential state such as:
 Program Counter, Register File writes, Data Memory writes.
  
-# The current implementation supports instruction classes:
-R-type: ADD, SUB, AND, OR, XOR, SLL, SRL, SRA, SLT, SLTU
-I-type: ADDI, ANDI, ORI, XORI, SLLI, SRLI, SRAI, SLTI, SLTIU
-Load / Store: LW, SW
-Branch: BEQ, BNE
-Jump: JAL, JALR
-Upper Immediate: LUI
+## Supported Instructions
+
+| Instruction Class | Supported Instructions |
+|---|---|
+| **R-Type** | `ADD`, `SUB`, `AND`, `OR`, `XOR`, `SLL`, `SRL`, `SRA`, `SLT`, `SLTU` |
+| **I-Type** | `ADDI`, `ANDI`, `ORI`, `XORI`, `SLLI`, `SRLI`, `SRAI`, `SLTI`, `SLTIU` |
+| **Load / Store** | `LW`, `SW` |
+| **Branch** | `BEQ`, `BNE` |
+| **Jump** | `JAL`, `JALR` |
+| **Upper Immediate** | `LUI` |
