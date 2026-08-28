@@ -67,3 +67,4 @@ RISC-V-Single-Cycle/
 └── README.md
 ```
 
+output for the current testbench is present in docs file as Expected_Output
