@@ -37,3 +37,29 @@ The datapath consists of the following major blocks:
 | **Branch** | `BEQ`, `BNE` |
 | **Jump** | `JAL`, `JALR` |
 | **Upper Immediate** | `LUI` |
+
+## Repository structure
+RISC-V-Single-Cycle/
+│
+├── rtl/
+│   ├── riscv_processor.v
+│   ├── pc.v
+│   ├── instruction_memory.v
+│   ├── register_file.v
+│   ├── immediate_generator.v
+│   ├── riscv_decoder.v
+│   ├── alu.v
+│   ├── alu_input_mux.v
+│   ├── data_memory.v
+│   ├── pc_mux1.v
+│   ├── pc_mux2.v
+│   ├── pc_adder.v
+│   └── write_back_mux.v
+│
+├── tb/
+│   └── riscv_processor_tb.v
+│
+├── docs/
+│   └── single_cycle_datapath.png
+│
+└── README.md
