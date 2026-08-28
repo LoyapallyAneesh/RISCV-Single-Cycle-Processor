@@ -25,7 +25,7 @@ The datapath consists of the following major blocks:
 
 ### Single-Cycle Datapath
 
-![RISC-V Single-Cycle Datapath](docs/single_cycle_datapath.png)
+![RISC-V Single-Cycle Datapath](docs/Screenshot_2026-08-28_171839.png)
  
 ## Supported Instructions
 
