@@ -38,7 +38,9 @@ The datapath consists of the following major blocks:
 | **Jump** | `JAL`, `JALR` |
 | **Upper Immediate** | `LUI` |
 
-## Repository structure
+## Repository Structure
+
+```text
 RISC-V-Single-Cycle/
 │
 ├── rtl/
@@ -63,3 +65,5 @@ RISC-V-Single-Cycle/
 │   └── single_cycle_datapath.png
 │
 └── README.md
+```
+
