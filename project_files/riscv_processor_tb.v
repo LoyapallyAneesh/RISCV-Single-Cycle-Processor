@@ -82,26 +82,6 @@ initial begin
    #20;
    reset = 1'b0;
 end
-// MONITOR
-initial begin
-        $monitor(
-            "Time=%0t | PC=%h | Instruction=%h | x1=%0d x2=%0d x3=%0d x4=%0d x5=%0d x6=%0d x7=%0d x8=%0d x9=%0d",
-            $time,
-            DUT.current_pc,
-            DUT.instruction,
-
-            DUT.REG_FILE.registers[1],
-            DUT.REG_FILE.registers[2],
-            DUT.REG_FILE.registers[3],
-            DUT.REG_FILE.registers[4],
-            DUT.REG_FILE.registers[5],
-            DUT.REG_FILE.registers[6],
-            DUT.REG_FILE.registers[7],
-            DUT.REG_FILE.registers[8],
-            DUT.REG_FILE.registers[9]
-        );
-    end
-
 // TEST
 initial begin
  // Wait until reset is released
